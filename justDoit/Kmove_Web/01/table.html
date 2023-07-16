@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td, tr {
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+     <link rel="stylesheet" type="text/css" href="../00/language.css">
+</head>
+<body>
+    <button id="Language">言語変更/언어변경</button>
+    
+    <div id="Nihongo" class="hidden">
+        <h1>Today's Weather</h1>
+        <table>
+            <tr>
+                <th>地域</th>
+                <th>現在の気温</th>
+                <th colspan="2">不快指数/湿度(%)</th>
+                <th>風俗</th>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">ソウル/京畿</td>
+                <td>23</td> 
+                <td>60</td> 
+                <td>80</td> 
+                <td>4.7</td> 
+            </tr>
+            <tr>
+                <!-- <td>경기도</td> -->
+                <td>25</td> 
+                <td>64</td> 
+                <td>70</td> 
+                <td>6.1</td> 
+        </tr>
+        <tr>
+                <td>済州島</td>
+                <td>29</td> 
+                <td>68</td> 
+                <td>78</td> 
+                <td>3.5</td> 
+            </tr>
+        </table>
+    <br>
+        <table>
+            <tr>
+                <th colspan="3">Introduce Myself</th>
+            
+            </tr>
+            <tr>
+                <th>名</th>
+                <td>シム·ウォンジン</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>学籍番号.</th>
+                <td>20182404</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>年</th>
+                <td>24</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>学んだ言語</th>
+                <td>Java, C, python, Html5, MySql etc</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>日本語レベル</th>
+                <td>低め</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>計画</th>
+                <td>今後の計画はサーバー構築し、ウェブサービスを提供する部分とスキューバネティス関連の勉強をするつもりです。</td>
+                <td></td>
+            </tr>
+        </table><br><br>
+        <a href="../00/index.html">Homeに移動する</a>
+    </div>
+
+    <div id="Kankokugo" >
+        <h1>Today's Weather</h1>
+        <table>
+            <tr>
+                <th>지역</th>
+                <th>현재기온</th>
+                <th colspan="2">불쾌지수/습도(%)</th>
+                <th>풍속</th>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">서울/경기</td>
+                <td>23</td> 
+                <td>60</td> 
+                <td>80</td> 
+                <td>4.7</td> 
+            </tr>
+            <tr>
+                <!-- <td>경기도</td> -->
+                <td>25</td> 
+                <td>64</td> 
+                <td>70</td> 
+                <td>6.1</td> 
+        </tr>
+        <tr>
+                <td>제주도</td>
+                <td>29</td> 
+                <td>68</td> 
+                <td>78</td> 
+                <td>3.5</td> 
+            </tr>
+        </table>
+    <br>
+        <table>
+            <tr>
+                <th colspan="3">Introduce Myself</th>
+            
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>심원진</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>학번</th>
+                <td>20182404</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>나이</th>
+                <td>24</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>배운 언어</th>
+                <td>Java, C, python, Html5, MySql etc</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>일본어 수준</th>
+                <td>낮음</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>계획</th>
+                <td>앞으로의 계획은 서버구축하여 웹서비스를 제공하는 부분과 쿠버네티스 관련 공부를 할 계획입니다.</td>
+                <td></td>
+            </tr>
+        </table><br><br>
+        <a href="../00/index.html">Home으로 이동하기</a>
+    </div>
+
+    <script>
+        var icon = document.getElementById('Language');
+        var content1 = document.getElementById('Kankokugo');
+        var content2 = document.getElementById('Nihongo');
+    
+        icon.addEventListener('click', function() {
+          if (content1.classList.contains('hidden')) {
+            content1.classList.remove('hidden');
+            content2.classList.add('hidden');
+          } else {
+            content1.classList.add('hidden');
+            content2.classList.remove('hidden');
+          }
+        });
+      </script>
+</body>
+</html>

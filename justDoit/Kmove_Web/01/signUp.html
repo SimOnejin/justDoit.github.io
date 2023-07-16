@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../00/language.css">
+    <style>
+        body {
+            background-color: rgb(29, 29, 29);
+            display: flex;
+            justify-content: center;
+            padding-top: 5%;
+        }
+        form {
+            background-color: rgb(255, 250, 240);
+            width: 40rem;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+            text-align: left;
+        }
+        .button {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border-style: none;
+            background-color: rgb(160, 185, 252);
+        }
+        .cancle {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border-style: none;
+            background-color: rgb(252, 215, 160);
+        }
+        /* th, td, table { */
+            /* border: solid 1px black; */
+        /* } */
+        form {
+            overflow: scroll;
+
+        }
+        .scroll::-webkit-scrollbar {
+            display: none;      
+        }
+        #Language {
+            width: 100px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="Language">言語変更/언어변경</button>
+
+    
+    <div id="Nihongo" class="hidden">
+        <form class="scroll">
+            <table>
+                <tr><th colspan="3" style="text-align: center;"><h3>[会員加入]</h3></th></tr>
+                <tr>
+                    <th>会員ID : </th>
+                    <td><input type="text"></td>
+                    <td><button>重複確認</button></td>
+                </tr>
+                <tr>
+                    <th>Password : </th>
+                    <td><input type="Password"></td>
+                    <td style="font-size: 12px; max-width: 230px; ;" >*英文 大小文字/数字/特殊文字を混合し、2種類10~16字または3種類9~16字</td>
+                </tr>
+                <tr>
+                    <th>Password Check : </th>
+                    <td><input type="Password"></td>
+                </tr>
+                <tr>
+                    <th>生年月日 : </th>
+                    <td><input type="date"s></td>
+                </tr>
+                <tr>
+                    <th>名 : </th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>性別 : </th>
+                    <td><input type="radio" name="info" checked>Male
+                        <input type="radio" name="info">Female</td>
+                </tr>
+                <tr>
+                    <th>家の電話
+                        : </th>
+                    <td colspan="3">
+                        <select>
+                            <option>070</option>
+                            <option>071</option>
+                            <option>072</option>
+                        </select>
+                        <input type="text" size="8"> - <input type="text" size="8">
+                    </td>
+                </tr>
+                <tr>
+                    <th>携帯電話
+                        : </th>
+                    <td colspan="3">
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>012</option>
+                        </select>
+                        <input type="text" size="8"> - <input type="text" size="8">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email : </th>
+                    <td colspan="3">
+                        <input class="text" type="text" size="15px"> @
+                        <select>
+                            <option>-select-</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>google.com</option>
+                            <option>bu.ac.kr</option>
+                            <option>直接入力</option>
+                        </select>
+                        <button>重複確認</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th rowspan="3">住所 : </th>
+                    <td colspan="2"><input type="text" placeholder="郵便番号." size="15"> <button type="button">郵便番号検索</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="道路名住所"></td>
+                    <td><input type="text" placeholder="地番住所"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea rows="1" cols="40" placeholder="残りの住所"></textarea></td>
+                </tr>
+                <tr>
+                    <th>ニュースメール : </th>
+                    <td>
+                        <input type="radio" name="news" checked>Agree
+                        <input type="radio" name="news">Disagree
+                    </td>
+                </tr>
+                <tr>
+                    <th>SMS案内 : </th>
+                    <td>
+                        <input type="radio" name="sms" checked>Agree
+                        <input type="radio" name="sms">Disagree
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"><button class="button">会員加入</button> <button class="cancle">キャンセル</button></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;"><a href="../00/index.html">Homeに戻る</a></td>
+                </tr>
+               
+        </table>
+        
+        </form>
+    </div>
+
+    <div id="Kankokugo">
+        <form class="scroll">
+            <table>
+                <tr><th colspan="3" style="text-align: center;"><h3>[회원가입]</h3></th></tr>
+                <tr>
+                    <th>회원ID : </th>
+                    <td><input type="text"></td>
+                    <td><button>중복확인</button></td>
+                </tr>
+                <tr>
+                    <th>Password : </th>
+                    <td><input type="Password"></td>
+                    <td style="font-size: 12px; max-width: 230px; ;" >*영문 대소문자/숫자/특수문자를 혼합하여 2종류 10~16자 또는 3종류 9~16자</td>
+                </tr>
+                <tr>
+                    <th>Password Check : </th>
+                    <td><input type="Password"></td>
+                </tr>
+                <tr>
+                    <th>생년월일 : </th>
+                    <td><input type="date"s></td>
+                </tr>
+                <tr>
+                    <th>이름 : </th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>성별 : </th>
+                    <td><input type="radio" name="info" checked>Male
+                        <input type="radio" name="info">Female</td>
+                </tr>
+                <tr>
+                    <th>집전화 : </th>
+                    <td colspan="3">
+                        <select>
+                            <option>070</option>
+                            <option>071</option>
+                            <option>072</option>
+                        </select>
+                        <input type="text" size="8"> - <input type="text" size="8">
+                    </td>
+                </tr>
+                <tr>
+                    <th>휴대폰 : </th>
+                    <td colspan="3">
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>012</option>
+                        </select>
+                        <input type="text" size="8"> - <input type="text" size="8">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일 : </th>
+                    <td colspan="3">
+                        <input class="text" type="text" size="15px"> @
+                        <select>
+                            <option>-select-</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>google.com</option>
+                            <option>bu.ac.kr</option>
+                            <option>직접입력</option>
+                        </select>
+                        <button>중복확인</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th rowspan="3">주소 : </th>
+                    <td colspan="2"><input type="text" placeholder="우편번호" size="15"> <button type="button">우편번호 검색</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="도로명주소"></td>
+                    <td><input type="text" placeholder="지번주소"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea rows="1" cols="40" placeholder="나머지 주소"></textarea></td>
+                </tr>
+                <tr>
+                    <th>뉴스메일 : </th>
+                    <td>
+                        <input type="radio" name="news" checked>Agree
+                        <input type="radio" name="news">Disagree
+                    </td>
+                </tr>
+                <tr>
+                    <th>SMS안내 : </th>
+                    <td>
+                        <input type="radio" name="sms" checked>Agree
+                        <input type="radio" name="sms">Disagree
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"><button class="button">회원가입</button> <button class="cancle">취소</button></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;"><a href="../00/index.html">Home으로 돌아가기</a></td>
+
+                </tr>
+                
+        </table>
+        
+        </form>
+    </div>
+
+    <script>
+        var icon = document.getElementById('Language');
+        var content1 = document.getElementById('Kankokugo');
+        var content2 = document.getElementById('Nihongo');
+    
+        icon.addEventListener('click', function() {
+          if (content1.classList.contains('hidden')) {
+            content1.classList.remove('hidden');
+            content2.classList.add('hidden');
+          } else {
+            content1.classList.add('hidden');
+            content2.classList.remove('hidden');
+          }
+        });
+      </script>
+
+</body>
+</html>

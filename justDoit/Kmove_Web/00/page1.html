@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./language.css">
+</head>
+<body>
+    <button id="Language">言語変更/언어변경</button>
+    
+    <div id="Nihongo" class="hidden">
+        <h2>ITZY</h2>
+        <img src="img\itzy1.webp" width="300">
+        <p>チーム名の「ITZY」は 「君たちが望むものは全部あるよね？ 「イッジ！」という意味を持っており、正式なハングル表記法はITZYである。 もし英語名である「ITZY」だけで聞いたことのある人たちがハングルではどのように書くのか分からず「イッジ」と呼ぶ場合もかなり多いが、「イッジ」と呼ぶべきだと訂正してくれるのがファンダムMIDZYには日常になった。</p>
+
+        <a href="index.html">Homeに移動する</a><br><br>
+        <a href="https://www.youtube.com/channel/UCDhM2k2Cua-JdobAh5moMFg" target="_blank"> <img src="img\youtube.png" width="20">移動する</a>
+    </div>
+
+    <div id="Kankokugo">
+        <h2>ITZY</h2>
+        <img src="img\itzy1.webp" width="300">
+        <p>팀명 'ITZY'는 '너희가 원하는 거 전부 있지? 있지!' 라는 뜻을 가지고 있으며, 정식 한글 표기법은 있지이다. 혹 영어명인 'ITZY'로만 들어본 사람들이 한글로는 어떻게 적는지 몰라 '잇지'라고 부르는 경우도 꽤 많이 있는데, '있지'라고 불러야 한다며 정정해주는 것이 팬덤 믿지에게는 일상이 되었다.</p>
+
+        <a href="index.html">Home으로 이동하기</a><br><br>
+        <a href="https://www.youtube.com/channel/UCDhM2k2Cua-JdobAh5moMFg" target="_blank"> <img src="img\youtube.png" width="20">이동하기</a>
+    </div>
+
+    <script>
+        var icon = document.getElementById('Language');
+        var content1 = document.getElementById('Kankokugo');
+        var content2 = document.getElementById('Nihongo');
+    
+        icon.addEventListener('click', function() {
+          if (content1.classList.contains('hidden')) {
+            content1.classList.remove('hidden');
+            content2.classList.add('hidden');
+          } else {
+            content1.classList.add('hidden');
+            content2.classList.remove('hidden');
+          }
+        });
+      </script>
+</body>
+</html>

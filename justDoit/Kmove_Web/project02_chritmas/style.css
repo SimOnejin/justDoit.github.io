@@ -1,0 +1,18 @@
+body {
+    background-image: url("./christmas_bg.png");
+    background-repeat: no-repeat;
+    background-size:80%;
+    height: 100%;
+}
+
+p {
+    color: aliceblue;
+    font-size: 14px
+}
+
+h2 {
+    color: gold;
+    font-size: 24px;
+    border-bottom: dotted 3px white;
+    width: 300px;
+}

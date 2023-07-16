@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <title>
+  welcom to the computer study!
+ </title>
+ <meta charset="utf-8" name="google" value="notranslate">
+ <style>
+  h1{
+   color: #009688;
+   text-shadow: 2px 2px #F44336;
+   }
+  p{
+   margin-left: 20px;
+   margin-right: 20px;
+   text-align: justify;
+   line-height: 1.5;
+   color: #FF9800;
+   foont-weight: bold;
+   }
+  a{
+   text-align: center;
+   text-decoration: none;
+   color: inherit;
+   }
+  #mail{
+   color: #336699;
+  }
+  #bee{
+   animation: twinkle 1.0s ease-in-out infinite;
+   color: blue;
+  }
+  #name{
+   animation: twinkle 0.8s ease-in-out infinite;
+ 
+  }
+  @keyframes twinkle {
+   0%{
+    opacity: 1;
+   }
+   50%{
+    opacity: 0.4;
+   }
+   100%{
+    opacity: 1;
+   }
+   }
+ </style>
+ <style>
+  .hover-text {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .hover-text span {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .hover-text:hover span {
+    display: block;
+  }
+</style>
+</head>
+
+<body>
+ <a href="www.naver.com" target=_"blank">naver</a>
+ <h3>Hello world</h3>
+ <h1 id="name">My name is <strong>Sim Won Jin</strong></h1>
+ <p>I'm 24years old,and I'm a <strong>Student</strong>, studying in BaekSeok Univ.</p>
+ <p>I studied C, java, python, openCV, JSP, HTML, react, MySql, Unix etc.</p>
+ <p>Thanks for visiting my page, feel free to contact me at <a class="hover-text" id="mail" onclick="copyToClipboard('simwj0227@gmail.com')" href="mailto:simwj0227@gmail.com">simwj0227@gmail.com<span>클릭시메일</span></a></p>
+ <p>Try my web service!</p>
+ <a class="hover-text" id="bee" href="https://elegant-paprenjak-cd7026.netlify.app" target="_blank">Click here!<span>클릭시 이동</span></a>
+ <br><br>
+ <a href="index.html">Home으로 이동하기</a><br><br>
+
+ <script>
+  function copyToClipboard(text) {
+  // 임시 textarea 엘리먼트를 만듭니다.
+  var temp = document.createElement("textarea");
+
+  // 텍스트를 할당합니다.
+  temp.value = text;
+
+  // textarea를 DOM에 추가합니다.
+  document.body.appendChild(temp);
+
+  // textarea를 선택합니다.
+  temp.select();
+
+  // 클립보드에 복사합니다.
+  document.execCommand("copy");
+
+  // textarea를 제거합니다.
+  document.body.removeChild(temp);
+}
+</script>
+ 
+</body>
+
+</html>

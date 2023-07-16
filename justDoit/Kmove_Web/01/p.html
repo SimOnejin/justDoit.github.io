@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단락연습</title>
+    <style>
+        p {
+            color: rgb(104, 104, 208);
+            font-size: 20px;
+            border: dotted 2px black;
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 5%;
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+       
+    </style>
+    <link rel="stylesheet" type="text/css" href="../00/language.css">
+</head>
+<body>
+    <button id="Language">言語変更/언어변경</button>
+    
+    <div id="Nihongo" class="hidden">
+        <h3>チューリップ.</h3>
+        <p><b>チューリップ</b>は様々な種類の品種に分かれており、それぞれ美しい花を鑑賞することができる。</p>
+        <p><i>日当たりが良く排水のよい土壌</i>に植えるのが適しており, 植木鉢は区群の2~3倍程度の大きさが適当である</p>
+        <a href="../00/index.html">Homeに移動する</a><br><br>
+    </div>
+
+    <div id="Kankokugo">
+        <h3>튤립</h3>
+        <p><b>튤립</b>은 여러 종류의 품종으로 나누어져 있어 각기 아름다운 꽃을 감살할 수 있다.</p>
+        <p><i>햇볕이 잘 들고 배수가 잘되는 토양</i>에 심는 것이 적합하며 화분은 구군의 2~3배 정도 크기가 적당하다</p>
+        <a href="../00/index.html">Home으로 이동하기</a><br><br>
+    </div>
+
+    
+    <script>
+        var icon = document.getElementById('Language');
+        var content1 = document.getElementById('Kankokugo');
+        var content2 = document.getElementById('Nihongo');
+    
+        icon.addEventListener('click', function() {
+          if (content1.classList.contains('hidden')) {
+            content1.classList.remove('hidden');
+            content2.classList.add('hidden');
+          } else {
+            content1.classList.add('hidden');
+            content2.classList.remove('hidden');
+          }
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="icon">아이콘</button>
+  <div id="content" class="hidden">
+    이 부분은 클릭 시 보여집니다.
+  </div>
+
+  <script>
+    var icon = document.getElementById('icon');
+    var content = document.getElementById('content');
+
+    icon.addEventListener('click', function() {
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+      } else {
+        content.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>

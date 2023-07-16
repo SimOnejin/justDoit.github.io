@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            padding-bottom: 10px;
+        }
+        ul {
+            position: relative;
+            max-width: 500px;
+        }
+        .text {
+            /* margin-left: 100px; */
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+        <li>Name : <input class="text" type="text"><br></li>
+        <li>Password : <input class="text" type="password"><br></li>
+        <li>Age : <input class="text" type="text"></li>
+        <li>Privacy Agree : <input type="radio" name="info" checked>Agree
+                        <input type="radio" name="info">Disagree</li>
+        <li>Hobby : <input type="checkbox" name="hobby1">Climing
+            <input type="checkbox" name="hobby2" checked>Reading
+            <input type="checkbox" name="hobby3">Bowling
+            <input type="checkbox" name="hobby4">Riding</li>
+        <li>Email : <input type="text">@
+            <select>
+                <option>선택</option>
+                <option>naver.com</option>
+                <option>daum.net</option>
+                <option>google.com</option>
+                <option>bu.ac.kr</option>
+            </select>
+        </li>
+        <li>
+            Introduce : <br><textarea rows="10" cols="50"></textarea>
+        </li>
+        <li style="list-style-type: none;">
+            <button type="button">Search</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </li>
+        <li>Upload Files : <input type="file">*Max size 2MB</li>
+    </ul>
+    </form>
+</body>
+</html>

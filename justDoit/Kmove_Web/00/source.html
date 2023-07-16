@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>순서 없는 목록</title>
+    <style>
+        article {
+            cursor: pointer;
+        }
+    
+        article.open {
+            height: auto;
+        }
+        table, th, td {
+            border: solid 1px black;
+        }
+    </style>
+    <script>
+        const article = document.getElementById('myArticle');
+
+        article.addEventListener('click', function () {
+            article.classList.toggle('open');
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="./language.css">
+
+</head>
+<body>
+    <button id="Language">言語変更/언어변경</button>
+    
+    <div id="Nihongo" class="hidden">
+        <table>
+            <tr>
+                <th>
+                    <h2>植物園観覧注意事項</h2>
+                </th>        
+                <td>
+                    <ul>
+                        <li>入場券に掲示された観覧要領をご覧ください。</li>
+                        <li>案内員の案内に従ってください</li>
+                        <li>観覧地域以外の出入り制限地域は立ち入り禁止です。</li>
+                        <li>植物が植栽された場所に入らないでください。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h3>家族生態体験旅行</h3>
+                </th>
+                <td>
+                    <ol>
+                        <li>期間 : 2015年4月~10月</li>
+                        <li>対象:家族(小学生以上の子供、保護者および同伴者参加)<br>
+                            ※番組の性格により対象者の年齢が変更されることがあります。</li>
+                        <li>人数:1クラス20人前後(親含む)定員</li>
+                        <li>参加費:該当プログラムを参照</li>
+                        <li>申し込み方法:ホームページ申し込み、事前決済(カード)</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <ul>
+            <li><a href="index.html">Homeに移動する</a><br><br></li>
+            <li><a href="page1.html">page1に移動する</a><br><br></li>
+            <li><a href="https://naver.com" target="_blank">naverに移動する</a><br><br></li>
+            <li><a href="https://elegant-paprenjak-cd7026.netlify.app/" target="_blank">ミツバチ分類器に移動する</a><br><br></li>
+            <li><a href="https://puginarug.com/" target="_blank">puginarugに移動する</a><br><br></li>
+            <li><a href="https://longdogechallenge.com/" target="_blank">longdogechallengeに移動する</a><br><br></li>
+            <img src="img/doge.jpg" width="150">
+            <br><a href="https://www.instagram.com/itzy.all.in.us/" target="_blank"> <img src="img/itzy.png"width="80"></a><br><br>
+        </ul>
+    </div>
+
+
+    <div id="Kankokugo">
+        <table>
+            <tr>
+                <th>
+                    <h2>식물원 관람 유의사항</h2>
+                </th>        
+                <td>
+                    <ul>
+                        <li>입장권에 게시된 관람요령을 살펴보기시 바랍니다.</li>
+                        <li>안내원의 안내에 따라 주시기 바랍니다</li>
+                        <li>관람 지역 이외의 출입제한 지역은 출입을 금합니다.</li>
+                        <li>식물이 식재된 곳에 들어가지 마십시오.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h3>가족 생태체험여행</h3>
+                </th>
+                <td>
+                    <ol>
+                        <li>기간 : 2015년 4월 ~ 10월</li>
+                        <li>대상 : 가족(초등학생 이상의 어린이, 부모 및 동반자 참여<br>
+                        ※프로그램의 성격에 따라 대상자의 연령이 변경될 수 있습니다.</li>
+                        <li>인원 : 1반 20명 내외(부모 포함) 정원</li>
+                        <li>참가비 : 해당 프로그램 참조</li>
+                        <li>신청방법 : 홈페이지 신청, 사전결제(카드)</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <ul>
+            <li><a href="index.html">Home으로 이동하기</a><br><br></li>
+            <li><a href="page1.html">page1으로 이동하기</a><br><br></li>
+            <li><a href="https://naver.com" target="_blank">naver로 이동하기</a><br><br></li>
+            <li><a href="https://elegant-paprenjak-cd7026.netlify.app/" target="_blank">꿀벌분류기로 이동하기</a><br><br></li>
+            <li><a href="https://puginarug.com/" target="_blank">puginarug로 이동하기</a><br><br></li>
+            <li><a href="https://longdogechallenge.com/" target="_blank">longdogechallenge로 이동하기</a><br><br></li>
+            <img src="img/doge.jpg" width="150">
+            <br><a href="https://www.instagram.com/itzy.all.in.us/" target="_blank"> <img src="img/itzy.png"width="80"></a><br><br>
+        </ul>
+    </div>
+
+    <script>
+        var icon = document.getElementById('Language');
+        var content1 = document.getElementById('Kankokugo');
+        var content2 = document.getElementById('Nihongo');
+    
+        icon.addEventListener('click', function() {
+          if (content1.classList.contains('hidden')) {
+            content1.classList.remove('hidden');
+            content2.classList.add('hidden');
+          } else {
+            content1.classList.add('hidden');
+            content2.classList.remove('hidden');
+          }
+        });
+      </script>
+
+</body>
+</html>

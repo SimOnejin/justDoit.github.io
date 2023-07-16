@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>
+        정보통신학부 홈페이지에 오신것을 환영합니다
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .hidden {
+          display: none;
+        }
+        #Language {
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-left: 5%;
+            scale: 200%;
+            /* background-color:antiquewhite; */
+            /* border-radius: 5px; */
+            /* box-shadow: none; */
+        }
+      </style>
+      <!-- <link rel="stylesheet" type="text/css" href="./language.css">
+      <script src="exchangeLanguage.js"></script> -->
+</head>
+
+<body>
+    <button id="Language">言語変更/언어변경</button>
+    <div id="Nihongo" class="hidden">
+        <h2>はじめました！</h2>
+        <h4>私はシムヲンジンです。</h4>
+        <p>年は24歳です。</p>
+        <p>私の専攻は <b style="color:rgb(255, 0, 85)">コンピューター工学部ソフトウェアで</b><i>2024年2月卒業予定です。</i></p><br>
+        <hr>
+        <h3>#勉強した言語</h3>
+        <p>勉強した言語は <strong style="color:brown">
+                C&nbsp&amp&nbspJava&nbsp&amp&nbsp&nbsppython&nbsp&amp&nbspJSP&nbsp&amp&nbspHTML&nbsp&amp&nbspreact&nbsp&amp&nbspMySql&nbsp&amp&nbspUnix
+            </strong>が
+            あります。</p>
+        <p><i>日本語のレベルはまだ低いけど真剣に勉強に中です</i></p>
+        <hr>
+        <h3>#今後の計画</h3>
+        <P>これからの計画はサーバー構築してウェブサービスを提供する部分とクバネティス関連の勉強をする計画です。/P>
+
+        <ol>
+            <li><a href="source.html">講義リストに移動する</a><br><br></li>
+            <li><a href="image_attribute.html">Dogeに移動する</a><br><br></li>
+            <li><a href="absolute_url.html">GIFに移動する</a><br><br></li>
+            <li><a href="video.html">Videoに移動する</a><br><br></li>
+            <li><a href="./../01/p.html">Pに移動する</a><br><br></li>
+            <li><a href="test.html">testに移動する</a><br><br></li>
+            <li><a href="./../01/table.html">tableに移動する</a><br><br></li>
+            <li><a href="./../01/signUp.html">signUpに移動する</a><br><br></li>
+            <li><a href="./../01/text_align.html">text_alignに移動する</a><br><br></li>
+            <li><a href="./../project1_garden/garden.html">gardenに移動する</a><br><br></li>
+            <li><a href="./../project02_chritmas/chritmas.html">chritmasに移動する</a><br><br></li>
+            
+            <li><a href="https://naver.com" target="_blank">naverに移動する</a><br><br></li>
+        </ol>
+    </div>
+
+    <div id="Kankokugo" >
+        <h2>안녕하세요</h2>
+        <h4>제 이름은 심원진입니다.</h4>
+        <p>나이는 24살입니다.</p>
+        <p>제 전공은 <b style="color:rgb(255, 0, 85)">컴퓨터공학부 소프트웨어</b> 전공이고 <i>2024년 2월 졸업 예정입니다.</i></p><br>
+        <hr>
+        <h3>#공부한 언어</h3>
+        <p>공부한 언어는 <strong style="color:brown">
+                C&nbsp&amp&nbspJava&nbsp&amp&nbsp&nbsppython&nbsp&amp&nbspJSP&nbsp&amp&nbspHTML&nbsp&amp&nbspreact&nbsp&amp&nbspMySql&nbsp&amp&nbspUnix
+            </strong>가
+            있습니다.</p>
+        <p><i>일본어 수준은 아직 낮은 수준이며 차근차근 공부중입니다.</i></p>
+        <hr>
+        <h3>#앞으로의 계획</h3>
+        <P>앞으로의 계획은 서버구축하여 웹서비스를 제공하는 부분과 쿠버네티스 관련 공부를 할 계획입니다.</P>
+
+        <ol>
+            <li><a href="source.html">강의목록으로 이동하기</a><br><br></li>
+            <li><a href="image_attribute.html">Doge로 이동하기</a><br><br></li>
+            <li><a href="absolute_url.html">GIF로 이동하기</a><br><br></li>
+            <li><a href="video.html">Video로 이동하기</a><br><br></li>
+            <li><a href="./../01/p.html">P로 이동하기</a><br><br></li>
+            <li><a href="test.html">test로 이동하기</a><br><br></li>
+            <li><a href="./../01/table.html">table 이동하기</a><br><br></li>
+            <li><a href="./../01/signUp.html">signUp으로 이동하기</a><br><br></li>
+            <li><a href="./../01/text_align.html">text_align 이동하기</a><br><br></li>
+            <li><a href="./../project1_garden/garden.html">garden 이동하기</a><br><br></li>
+            <li><a href="./../project02_chritmas/chritmas.html">chritmas 이동하기</a><br><br></li>
+            
+            <li><a href="https://naver.com" target="_blank">naver로 이동하기</a><br><br></li>
+        </ol>
+    </div>
+
+    <script>
+        var icon = document.getElementById('Language');
+        var content1 = document.getElementById('Kankokugo');
+        var content2 = document.getElementById('Nihongo');
+    
+        icon.addEventListener('click', function() {
+          if (content1.classList.contains('hidden')) {
+            content1.classList.remove('hidden');
+            content2.classList.add('hidden');
+          } else {
+            content1.classList.add('hidden');
+            content2.classList.remove('hidden');
+          }
+        });
+      </script>
+
+</body>
+
+</html>
